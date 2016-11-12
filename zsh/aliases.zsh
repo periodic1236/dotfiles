@@ -131,6 +131,11 @@ alias gbg='git bisect good'
 alias gbb='git bisect bad'
 alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
+# tmux
+alias tns='tmux new-session -s'
+alias tas='tmux attach-session -t'
+alias tls='tmux list-sessions'
+
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
