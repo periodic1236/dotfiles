@@ -31,6 +31,7 @@ alias cls='clear;ls'
 # Show human friendly numbers and colors
 alias df='df -h'
 alias du='du -h -d 2'
+alias lsF='ls -F'
 
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
@@ -100,7 +101,6 @@ alias gbi='git rebase --interactive'
 alias gl='git l'
 alias glg='git l'
 alias glog='git l'
-alias co='git co'
 alias gf='git fetch'
 alias gfp='git fetch --prune'
 alias gfa='git fetch --all'
@@ -204,15 +204,8 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 alias hpr='hub pull-request'
 alias grb='git recent-branches'
 
-# Finder
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
 alias dbtp='spring rake db:test:prepare'
 alias dbm='spring rake db:migrate'
 alias dbmr='spring rake db:migrate:redo'
 alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
-
-# Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
