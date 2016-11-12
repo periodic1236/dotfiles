@@ -4,6 +4,7 @@ if [ ! -d "$HOME/.yadr" ]; then
     echo "Installing YADR for the first time"
     git clone --depth=1 https://github.com/periodic1236/dotfiles.git "$HOME/.yadr"
     cd "$HOME/.yadr"
+    git checkout osx
     [ "$1" = "ask" ] && export ASK="true"
     rake install
 else

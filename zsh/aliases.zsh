@@ -31,6 +31,7 @@ alias cls='clear;ls'
 # Show human friendly numbers and colors
 alias df='df -h'
 alias du='du -h -d 2'
+alias lsF='ls -F'
 
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
@@ -100,7 +101,6 @@ alias gbi='git rebase --interactive'
 alias gl='git l'
 alias glg='git l'
 alias glog='git l'
-alias co='git co'
 alias gf='git fetch'
 alias gfp='git fetch --prune'
 alias gfa='git fetch --all'
@@ -215,4 +215,4 @@ alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias brewu='brew update && brew upgrade && brew cleanup -s && brew prune'
